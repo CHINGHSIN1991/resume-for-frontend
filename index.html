@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- v1.completeDate:2018/05/25 -->
+<!-- v2.completeDate:2022/03/27 -->
 <html>
 
 <head>
@@ -112,7 +114,7 @@
         <div class="title1">
           Education Background
         </div>
-        <ul>          
+        <ul>
           <li class="item">
             <h5 class="principalItem">Graduate Institute of Architecture - MArch I</h5>
             <div class="contentlayout">
@@ -146,10 +148,9 @@
               <p class="content">Bio-Architecture Formosana</p>
               <p class="content period">Mar. 2019 - May.2021</p>
             </div>
-          </li>          
+          </li>
         </ul>
-
-        <div class="title1">
+        <!-- <div class="title1">
           Languages
         </div>
         <div class="table">
@@ -173,20 +174,29 @@
             <li class="item note">
               No difficulties in communicating and working with English-speaking colleagues
             </li>
-        </div>
-
+        </div> -->
         <div class="title1 move">
           Motivation
         </div>
         <ul class="move">
-          <li class="item content">Compared with architectural projects, which take years to decades to complete,
-            front-end development projects take considerably shorter time to deliver. In addition to shorter project
-            cycles,I find the main attraction of front-end
-            design lies in intensive communication with various users, which entails responding to their feedback
-            swiftly and flexibly. Effective conversation with users, in my opinion, is of great significance for a
-            designer. While undergoing
-            training in front-end design, I realize I will be working in a wide-ranging business and have to harness a
-            set of fast-evolving skills, but for me challenges from emerging areas are always welcome.
+          <li class="item content">
+            <p>
+              Compared with architectural projects, which take years to decades to complete,
+              front-end development projects take considerably shorter time to deliver. In addition to shorter project
+              cycles,I find the main attraction of front-end
+              design lies in intensive communication with various users, which entails responding to their feedback
+              swiftly and flexibly. Effective conversation with users, in my opinion, is of great significance for a
+              designer. While undergoing
+              training in front-end design, I realize I will be working in a wide-ranging business and have to harness a
+              set of fast-evolving skills, but for me challenges from emerging areas are always welcome.
+            </p>
+            <p>
+              Today knowledge is always interdisciplinary, and I always seek to apply and integrate what I have learned
+              from the diverse areas in my career. My training in mathematics in university allowed me to specialize in
+              digital design in architecture. Meanwhile, working in architectural design has equipped me with the
+              ability to manage and organize a project as well as my aesthetic sensibility, both of which are
+              requirements of becoming a front-end designer.
+            </p>
 
         </ul>
       </div>
@@ -201,30 +211,31 @@
     <span class="title_content">Last update date : 2022 / 03 / 27</span>
   </div>
   <script type="text/javascript">
-    var message="Right-click has been disabled";
+    var message = "Right-click has been disabled";
     function clickIE() {
-        if (document.all) {
-            (message);
-            return false;
-        }
+      if (document.all) {
+        (message);
+        return false;
+      }
     }
     function clickNS(e) {
-        if (document.layers || (document.getElementById && !document.all)) {
-            if (e.which == 2||e.which == 3) {
-                (message);
-                return false;
-            }
+      if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2 || e.which == 3) {
+          (message);
+          return false;
         }
+      }
     }
     if (document.layers) {
-        document.captureEvents(Event.MOUSEDOWN);
-        document.onmousedown = clickNS;
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = clickNS;
     } else {
-        document.onmouseup = clickNS;
-        document.oncontextmenu = clickIE;
+      document.onmouseup = clickNS;
+      document.oncontextmenu = clickIE;
     }
     document.oncontextmenu = new Function("return false");
-    document.getElementsByClassName('my-img').ondragstart = function() { return false; };
-    </script>
+    document.getElementsByClassName('my-img').ondragstart = function () { return false; };
+  </script>
 </body>
+
 </html>
